@@ -22,8 +22,9 @@ function Visualizer() {
 
   return (
     <div className="flex items-center justify-center gap-0.5">
-      {Array.from({ length: 8 }).map(() => (
+      {Array.from({ length: 8 }).map((_, i) => (
         <motion.div
+          key={i}
           initial="initial"
           animate={playing ? "animate" : "initial"}
           variants={visualizer}

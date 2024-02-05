@@ -6,7 +6,7 @@ function Controls() {
   const { handleModeChange } = useMode();
 
   return (
-    <div className="flex items-center justify-center h-full gap-2">
+    <div className="flex flex-wrap items-center justify-center h-full gap-2 ">
       <Button onClick={() => handleModeChange("idle")}>Idle</Button>
       <Button onClick={() => handleModeChange("ring")}>
         <span className="flex items-center gap-2">
